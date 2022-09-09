@@ -1,0 +1,10 @@
+div{
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: min-content 1fr 1fr 1fr 1fr 2fr;
+    gap: 2rem ;
+}
+.completed{
+    background-color: gainsboro;
+    text-decoration: line-through;
+}

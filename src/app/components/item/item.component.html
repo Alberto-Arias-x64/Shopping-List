@@ -1,4 +1,9 @@
-<p>{{name}}</p>
-<p>{{price}}</p>
-<p>{{quiantity}}</p>
-<p>{{total}}</p>
+<div [ngClass]="{'completed': item.completed}">
+    <input type="checkbox" [checked]="item.completed" (change)="hide()" >
+    <p>{{item.title}}</p>
+    <p>{{item.price | currency}}</p>
+    <p>{{item.quantity}}</p>
+    <p>{{(item.price * item.quantity) | currency}}</p>
+    <button (click)="delete(item)">Eliminar</button>
+</div>
+<hr>

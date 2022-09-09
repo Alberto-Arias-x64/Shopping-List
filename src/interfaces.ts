@@ -5,3 +5,9 @@ export class Item{
     quantity: number = 0;
     completed: boolean = false;
 }
+
+export class Data{
+    title: string = '';
+    price: number = 0;
+    quantity: number = 0;
+}
