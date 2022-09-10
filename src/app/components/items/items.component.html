@@ -1,3 +1,7 @@
 <div>
     <app-item *ngFor="let item of items" [item]="item" (delete_item)="delete($event)"></app-item>
+    <div id="total">
+        <h3>Total:</h3> 
+        <p>{{total | currency}}</p>
+    </div>
 </div>

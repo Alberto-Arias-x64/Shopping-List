@@ -22,6 +22,6 @@ export class AddComponent implements OnInit {
     }
 
     on_submit(){
-        this.itemService.set_item(this.data)
+        this.itemService.setItem(this.data)
     }
 }

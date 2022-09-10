@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { Data, Item } from 'src/interfaces';
 
 @Injectable({
@@ -31,17 +32,18 @@ export class ItemService {
         },
     ]
 
-    constructor() { }
+    constructor(private router:Router) { }
 
-    get_items() {
+    getItems() {
         return this.items
     }
-    set_item(item: Data):void {
+    setItem(item: Data):void {
         this.items.push({
             ...item,
             id:this.counter,
             completed: false
         })
         this.counter ++
+        this.router.navigate(['/'])
     }
 }

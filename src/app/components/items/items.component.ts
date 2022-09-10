@@ -11,15 +11,21 @@ import { ItemService } from '../../services/item.service'
 export class ItemsComponent implements OnInit {
 
 	items: Item[] = []
+    total: number = 0
 
 	constructor(private itemService: ItemService) { 
     }
 
 	ngOnInit(): void {
-		this.items = this.itemService.get_items()
+		this.items = this.itemService.getItems()
+        this.getTotal()
+        fetch('http://localhost:3000')
 	}
     delete(item:Item){
         this.items = this.items.filter(element => element.id !== item.id)
+    }
+    getTotal(){
+        this.total = this.items.filter(element => element.completed === false).map(element => element.quantity * element.price).reduce((acc,item)=> acc += item,0)
     }
 
 }
