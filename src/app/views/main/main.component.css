@@ -1,6 +1,12 @@
 h1 {
   text-align: center;
   margin: var(--standard);
+  font-weight: 100;
+}
+h2 {
+  text-align: center;
+  margin: var(--standard);
+  font-weight: 100;
 }
 
 table {
@@ -11,6 +17,9 @@ table {
   td,
   th {
     padding: var(--standard);
+  }
+  th{
+    font-weight: 100;
   }
 
   tr {
