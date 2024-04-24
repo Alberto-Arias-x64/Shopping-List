@@ -1,0 +1,22 @@
+<h1>Shopping list</h1>
+<hr>
+<table>
+  <tr>
+    <th> Active </th>
+    <th> Product </th>
+    <th> Price </th>
+    <th> Quantity </th>
+    <th> Total </th>
+    <th> Action </th>
+  </tr>
+  @for (item of itemList; track item.name){
+  <tr>
+    <td><input type="checkbox" [checked]="item.check" (change)="handleChange(item.name)"></td>
+    <td [class]="{'dashed': !item.check}">{{item.name}}</td>
+    <td>{{item.price | currency : 'USD' : '$': '0.0-2'}}</td>
+    <td>{{item.quantity}}</td>
+    <td>{{item.price * item.quantity | currency : 'USD' : '$': '0.0-2'}}</td>
+    <td><button (click)="handleDelete(item.name)"> Delete </button></td>
+  </tr>
+  }
+</table>

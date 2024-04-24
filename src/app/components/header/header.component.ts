@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { StoreService } from '../../services/store.service';
+import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
+  standalone: true,
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrl: './header.component.css'
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
-  constructor() { }
+  private _storeService = inject(StoreService)
 
-  ngOnInit(): void {
+  clearStore() {
+    if (confirm('Do you want to clear the list?')) this._storeService.clearStore()
   }
-
 }

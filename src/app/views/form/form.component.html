@@ -1,0 +1,10 @@
+<form (ngSubmit)="handleSubmit()" #formRef>
+  <input type="text" name="name" [(ngModel)]="name" (change)="handleUncheck('name')" placeholder="Product" #nameRef>
+  <input type="number" name="price" [(ngModel)]="price" (change)="handleUncheck('price')" placeholder="Value" #priceRef>
+  <input type="number" name="quantity" [(ngModel)]="quantity" (change)="handleUncheck('quantity')" placeholder="Quantity" #quantityRef>
+  <div>
+    <button type="submit">Save</button>
+    <button type="button" (click)="handleReset()">Reset</button>
+  </div>
+</form>
+<hr>

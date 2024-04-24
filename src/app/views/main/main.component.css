@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+  margin: var(--standard);
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+
+  td,
+  th {
+    padding: var(--standard);
+  }
+
+  tr {
+    border-bottom: 1px solid grey;
+  }
+
+  tr:nth-child(even) {
+    background-color: gainsboro;
+  }
+}
+
+.dashed {
+  text-decoration: line-through;
+}

@@ -1,13 +1,12 @@
-header{
-    z-index: 2;
-}
-div{
-    margin: .5rem;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-h1{
-    margin: .5rem;
-    text-align: center;
+header {
+  padding: var(--standard);
+  background-color: gainsboro;
+  nav {
+    display: grid;
+    grid-template-columns: max-content auto max-content;
+    gap: var(--standard);
+    a {
+      width: fit-content;
+    }
+  }
 }
