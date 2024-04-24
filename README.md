@@ -1,27 +1,51 @@
-# ShoppingList
+# Shopping List
+## Descripción
+Shopping List es una aplicación desarrollada en Angular que te permite crear y gestionar listas de compras de manera fácil y rápida. La aplicación calcula automáticamente el total de tus compras, ayudándote a llevar un registro preciso de tus gastos.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+## Características principales
+- Creación y edición de listas de compras.
+- Agregar, eliminar y marcar elementos de la lista.
+- Cálculo automático del total de la compra.
+- Interfaz de usuario intuitiva y fácil de usar.
 
-## Development server
+## Demo
+Puedes utilizar el app 	[👉🏻 desde aquí 👈🏻](https://www.example.com)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instalación
+Clona este repositorio en tu máquina local.
+```bash
+git clone https://github.com/tu_usuario/shopping-list.git
+```
+Navega al directorio del proyecto.
+```bash
+cd shopping-list
+```
+Instala las dependencias usando npm.
+```bash
+npm install
+```
 
-## Code scaffolding
+## Desarrollo
+Inicia la aplicación.
+bash
+Copy code
+ng serve
+Abre tu navegador y visita http://localhost:4200.
+Contribuciones
+Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Haz un fork del repositorio.
+Crea una nueva rama.
+Realiza tus cambios y haz commit.
+Haz push de tus cambios a tu fork.
+Crea un pull request en el repositorio original.
+Licencia
+Este proyecto está bajo la Licencia MIT.
 
-## Build
+## Contacto
+Para cualquier pregunta o sugerencia, no dudes en ponerte en contacto con el equipo de desarrollo:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Nombre: Alberto Arias<br>
+Correo electrónico: alberto.arias.x64@gmail.com
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+¡Gracias por usar Shopping List!
