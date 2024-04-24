@@ -9,7 +9,7 @@ Shopping List es una aplicación desarrollada en Angular que te permite crear y 
 - Interfaz de usuario intuitiva y fácil de usar.
 
 ## Demo
-Puedes utilizar el app 	[👉🏻 desde aquí 👈🏻](https://www.example.com)
+Puedes utilizar el app 	[👉🏻 desde aquí 👈🏻](https://alberto-arias-x64.github.io/Shopping-List/)
 
 ## Instalación
 Clona este repositorio en tu máquina local.
