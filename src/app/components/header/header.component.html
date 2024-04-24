@@ -1,9 +1,8 @@
 <header>
-    <div>
-        <a routerLink="/">Home</a>
-        <a routerLink="/add">Add</a>
-    </div>
-    <hr>
-    <h1>App para comprar pan</h1>
-    <hr>
+    <nav>
+        <a routerLink="/" routerLinkActive="router-link-active">Home</a>
+        <a routerLink="/add" routerLinkActive="router-link-active">Add</a>
+        <button (click)="clearStore()">Clear</button>
+    </nav>
 </header>
+<hr>

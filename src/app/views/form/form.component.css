@@ -1,0 +1,19 @@
+form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: var(--standard);
+  display: flex;
+  flex-direction: column;
+  gap: var(--standard);
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: var(--standard);
+    button {
+      width: 100%;
+    }
+  }
+}
+.alert{
+  border-color: red;
+}
