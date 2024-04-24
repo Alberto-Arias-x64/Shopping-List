@@ -13,10 +13,11 @@
   <tr>
     <td><input type="checkbox" [checked]="item.check" (change)="handleChange(item.name)"></td>
     <td [class]="{'dashed': !item.check}">{{item.name}}</td>
-    <td>{{item.price | currency : 'USD' : '$': '0.0-2'}}</td>
-    <td>{{item.quantity}}</td>
-    <td>{{item.price * item.quantity | currency : 'USD' : '$': '0.0-2'}}</td>
+    <td [class]="{'dashed': !item.check}">{{item.price | currency : 'USD' : '$': '0.0-2'}}</td>
+    <td [class]="{'dashed': !item.check}">{{item.quantity}}</td>
+    <td [class]="{'dashed': !item.check}">{{item.price * item.quantity | currency : 'USD' : '$': '0.0-2'}}</td>
     <td><button (click)="handleDelete(item.name)"> Delete </button></td>
   </tr>
   }
 </table>
+<h2>Total {{total | currency : 'USD' : '$': '0.0-2'}}</h2>

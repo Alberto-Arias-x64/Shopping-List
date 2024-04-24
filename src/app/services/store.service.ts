@@ -17,6 +17,25 @@ export class StoreService {
     this._list.next([...actual, item])
   }
 
+  set changeItem(item: string) {
+    const actual = this._list.getValue()
+    const newList = actual.map(element => {
+      if (element.name === item) {
+        return {
+          ...element,
+          check: !element.check
+        }
+      } return element
+    })
+    this._list.next(newList)
+  }
+
+  set deleteItem(item: string) {
+    const actual = this._list.getValue()
+    const newList = actual.filter(element => element.name !== item)
+    this._list.next(newList)
+  }
+
   clearStore() {
     this._list.next([])
   }

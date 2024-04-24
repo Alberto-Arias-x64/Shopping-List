@@ -9,6 +9,13 @@
   box-sizing: border-box;
 }
 
-input, button{
+input,
+button {
   padding: 2px;
+}
+
+@media screen and (width <= 375px) {
+  :root {
+    --standard: 5px;
+  }
 }
