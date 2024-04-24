@@ -14,7 +14,7 @@ Puedes utilizar el app 	[👉🏻 desde aquí 👈🏻](https://www.example.com)
 ## Instalación
 Clona este repositorio en tu máquina local.
 ```bash
-git clone https://github.com/tu_usuario/shopping-list.git
+git https://github.com/Alberto-Arias-x64/Shopping-List.git
 ```
 Navega al directorio del proyecto.
 ```bash
